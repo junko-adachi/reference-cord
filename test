@@ -10,11 +10,40 @@
 <meta name="description" content="">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4/jquery.easing.min.js"></script>
+<link rel="stylesheet" href="/common/css/font-awesome.min.css">
+<link rel="stylesheet" href="/common/css/common.css">
+<script src="/common/js/common.js"></script>
+<script>
+$(function(){
+// toggle
+$(".opBtn").on("click", function() {
+		$(".opBox").slideToggle();
+		$(".opBtn").toggleClass("active");//追加部分
+});
+});
+</script>
 </head>
 
 <body>
 
 <h1>helo</h1>
-
+<p class="btnOldNews"><span class="opBtn">過去の新着情報</span></p>
+<div class="oldNews opBox">
+   <dl>
+				<dt>2018年5月23日</dt>
+				<dd class="job" style="display:inline-block;margin-top:10px;">養成講座</dd>
+				<dd><span class="mL10" style="display: inline-block;">第2回 （5/29・6/5 開催）、第3回 （6/14・21・28 開催）、第4回 （6/18・25 開催）、第5回 （7/13・20 開催）、第6回 （7/18・25 開催）、第7回 （8/2・7 開催）は満員となりました。</span></dd>
+			</dl>
+   <dl>
+				<dt>2018年5月15日</dt>
+				<dd class="job" style="display:inline-block;margin-top:10px;">養成講座</dd>
+				<dd><span class="mL10" style="display: inline-block;">第2回 （5/29・6/5 開催）、第3回 （6/14・21・28 開催）、第4回 （6/18・25 開催）、第5回 （7/13・20 開催）、第6回 （7/18・25 開催）は満員となりました。</span></dd>
+			</dl>
+   <dl>
+				<dt>2018年5月14日</dt>
+				<dd class="job" style="display:inline-block;margin-top:10px;">養成講座</dd>
+				<dd><span class="mL10" style="display: inline-block;">第2回 （5/29・6/5 開催）、第3回 （6/14・21・28 開催）、第5回 （7/13・20 開催）、第6回 （7/18・25 開催）は満員となりました。</span></dd>
+			</dl>
+<!--oldNews--></div>
 </body>
 </html>
